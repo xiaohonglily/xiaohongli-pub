@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self'; 
+  object-src 'none'; 
+  frame-ancestors 'none'; 
+  script-src 'self' https://cdnjs.cloudflare.com; 
+  style-src 'self'; 
+  img-src 'self'; 
+  base-uri 'self'; 
+  form-action 'self'; 
+  upgrade-insecure-requests;">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="A personal portfolio website showcasing my projects, skills in HTML, CSS, and JavaScript, and blog posts about my coding journey." />
+  <title>
+    xiao hong is programming
+  </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-packer">
+        <a href="#home" class="logo">Xiaohong Li</a>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Hamburger Menu -->
+        <button class="hamburger-menu" arial-label="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+      <div class="home-section-container">
+        <!-- Slideshow -->
+        <div class="slideshow">
+          <div class="slide slide1"></div>
+          <div class="slide slide2"></div>
+        </div>
+        <!-- Overlay -->
+        <div class="overlay"></div>
+        <!-- Home Content -->
+        <div class="home-container">
+          <h1 class="home-title">Hi, I'm <span class="highlight">Xiaohong Li</span></h1>
+          <p class="home-subtitle">
+            A passionate learner exploring the magic of programming through <strong>HTML</strong>, <strong>CSS</strong>,
+            and <strong>JavaScript</strong>.
+          </p>
+          <a href="#about" class="btn">Learn More About Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-container">
+        <!-- Profile Container -->
+        <div class="profile-container">
+          <div class="profile-image">
+            <img src="/images/webp/profile-picture-150px.webp"
+              srcset="/images/webp/profile-picture-150px.webp 150w, /images/webp/profile-picture-300px.webp 300w"
+              sizes="(min-width: 768px) 300px, 90vw" alt="Profile Picture">
+          </div>
+          <h3 class="profile-tagline">Curious Learner | Code Explorer</h3>
+        </div>
+        <!-- About Content -->
+        <div class="about-content">
+          <p>
+            To me, programming is nothing short of magic—it sparks my curiosity and fills me with excitement. Through
+            coding, I enjoy the process of turning ideas into reality, making that "magic happen." This sense of
+            exploration fuels my passion for learning and keeps me motivated.
+          </p>
+          <p>
+            I chose to learn <strong>HTML</strong>,<strong>CSS</strong> and <strong>JavaScript</strong> as my first step
+            into the world of programming. These tools allow me to build well-structured and functional web pages while
+            laying a solid foundation for more advanced development.
+          </p>
+          <p>
+            Looking ahead, I hope to expand my horizons and explore new areas of technology. I believe that with
+            continuous effort, I can bridge my interests with real-world applications, unlocking endless possibilities
+            for the future.
+          </p>
+          <!-- Contact Button -->
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-container">
+        <!-- Skill Item -->
+        <div class="skill">
+          <div class="skill-header">
+            <img src="/images/svg/html.svg" alt="HTML Icon" class="skill-icon">
+            <h3>HTML</h3>
+          </div>
+          <p>
+            Familiar with semantic HTML tags, understanding basic SEO optimization principles, and capable of writing
+            well-structured web pages.
+          </p>
+          <p class="skill-percent">90%</p>
+          <div class="skill-bar">
+            <div id="skillBarHtml" class="skill-bar-inner"></div>
+          </div>
+        </div>
+        <!-- Skill Item -->
+        <div class="skill">
+          <div class="skill-header">
+            <img src="/images/svg/css.svg" alt="CSS Icon" class="skill-icon">
+            <h3>CSS</h3>
+          </div>
+          <p>
+            Proficient in Flexbox layout, able to implement responsive designs and dynamic animation effects.
+          </p>
+          <p class="skill-percent">80%</p>
+          <div class="skill-bar">
+            <div id="skillBarCss" class="skill-bar-inner"></div>
+          </div>
+        </div>
+        <!-- Skill Item -->
+        <div class="skill">
+          <div class="skill-header">
+            <img src="/images/svg/javascript.svg" alt="JavaScript Icon" class="skill-icon">
+            <h3>JavaScript</h3>
+          </div>
+          <p>
+            Experienced in DOM manipulation and event handling, with a solid grasp of fundamental algorithms and
+            asynchronous operations.
+          </p>
+          <p class="skill-percent">75%</p>
+          <div class="skill-bar">
+            <div id="skillBarJs" class="skill-bar-inner"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <p>Here are some of the projects I've worked on while learning HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>
+            My first personal website showcasing my skills and projects.
+          </p>
+          <ul class="tech-stack">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <a href="https://github.com/xiaohonglily/xiaohongli-pub" class="btn" target="_blank">View Code</a>
+          <a href="https://xiaohongli.netlify.app/" class="btn" target="_blank">Live Demo</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>To-Do List App</h3>
+          <p>
+            A to-do list application building from scratch using HTML, CSS, and JavaScript, without relying on external frameworks.
+          </p>
+          <ul class="tech-stack">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <a href="https://github.com/xiaohonglily/to-do-list-pub" class="btn" target="_blank">View Code</a>
+          <a href="https://xiaohongli-to-do-list.netlify.app/" class="btn" target="_blank">Live Demo</a>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+      <div class="section-header">
+        <h2 class="section-title">Blog</h2>
+        <p>Sharing my thoughts, experiences, and lessons learned along my programming journey.</p>
+      </div>
+      <div class="blog-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-card">
+          <img src="/images/webp/blog1-240px.webp"
+            srcset="/images/webp/blog1-240px.webp 240w, /images/webp/blog1-480px.webp 480w"
+            sizes="(min-width: 768px) 480px, 90vw" alt="Blog Image" class="blog-image" loading="lazy">
+          <h3 class="blog-title">My Experience Building a Personal Portfolio Website</h3>
+          <p class="blog-date">Published on: January 10, 2025</p>
+          <p class="blog-excerpt">
+            A reflection on my journey of building my first portfolio website...
+          </p>
+          <a href="blog-post-1.html" class="btn">Read More</a>
+        </div>
+        <!-- Blog Post 2 -->
+        <div class="blog-card">
+          <img src="/images/webp/blog2-240px.webp"
+            srcset="/images/webp/blog2-240px.webp 240w, /images/webp/blog2-480px.webp 480w"
+            sizes="(min-width: 768px) 480px, 90vw" alt="Blog Image" class="blog-image" loading="lazy">
+          <h3 class="blog-title">Building a To-Do List App from Scratch - No Frameworks, Just Code</h3>
+          <p class="blog-date">Published on: February 18, 2025</p>
+          <p class="blog-excerpt">
+            Learn how I built a to-do list app using core web technologies, showcasing dynamic features and challenges faced...
+          </p>
+          <a href="blog-post-2.html" class="btn">Read More</a>
+        </div>
+        <!-- Add more blog cards as needed -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-header">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Let's Connect👋</p>
+      </div>
+      <div class="contact-container">
+        <!-- Contact Image -->
+        <div class="contact-image">
+          <img src="/images/webp/contact-480px.webp"
+            srcset="/images/webp/contact-480px.webp 480w, /images/webp/contact-960px.webp 960w"
+            sizes="(min-width: 768px) 960px, 90vw" alt="laptop" loading="lazy">
+        </div>
+        <!-- Contact Form -->
+        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+          <input type="hidden" name="form-name" value="contact">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <!-- Social Links -->
+        <div class="social-links">
+          <h3 class="contact-intro">
+            Interested in my project? Reach out to me here 👇
+          </h3>
+          <p>
+            Feel free to ping me for volunteering, discussing your ideas or grabbing a cup of coffee.
+          </p>
+          <a href="https://www.facebook.com/share/1RQ9N7ZU9Q/?mibextid=LQQJ4d" target="_blank" aria-label="LinkedIn">
+            <span class="icon icon-facebook"></span>
+          </a>
+          <a href="https://github.com/xiaohonglily" target="_blank" aria-label="GitHub">
+            <span class="icon icon-github"></span>
+          </a>
+        </div>
+        <!-- My Contact Infor -->
+        <div class="my-contact-infor">
+          <h3>Have a Question?</h3>
+          <p class="email-address">
+            <span class="icon icon-mail"></span>
+            xiaohongl@gmail.com
+          </p>
+          <p>
+            <span class="icon icon-skype"></span>
+            Lilyscode
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="rights">
+      <p>&copy; 2025 Xiaohong Li. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
